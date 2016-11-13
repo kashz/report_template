@@ -1,0 +1,40 @@
+% Listings Settings
+% require color.sty or xcolor.sty
+
+% Grey Version
+% require xcolor.sty
+\definecolor{BgColor}{named}{white}
+\definecolor{CommentColor}{RGB}{165, 165, 165}
+\definecolor{IdentifierColor}{RGB}{30, 30, 30}
+\definecolor{KeywordColor}{RGB}{60, 60, 60}
+\definecolor{StringColor}{RGB}{100, 100, 100}
+
+\lstset{%
+    % General
+    language={C}, %
+    showstringspaces=false, %
+    columns=[l]{fullflexible}, %
+    morecomment=[l]{//}, %
+    % Break
+    breakatwhitespace=false, %
+    breaklines=true, %
+    captionpos=t, %
+    % Styles
+    backgroundcolor=\color{BgColor}, %    
+    basicstyle={\small\ttfamily}, %    
+    commentstyle={\small\ttfamily\itshape \color{CommentColor}}, %
+    identifierstyle={\small\ttfamily \color{IdentifierColor}}, %
+    keywordstyle={\small\bfseries \color{KeywordColor}}, %
+    stringstyle={\ttfamily \color{StringColor}}, %
+    numberstyle={\scriptsize}, %
+    ndkeywordstyle={\small}, %    
+    % Number
+    numbers=left, %
+    stepnumber=1, %
+    numbersep=1zw, %
+    % Frame
+    frame={tb}, %
+    framerule=.4pt, %
+    xrightmargin=0zw, %
+    xleftmargin=3zw
+}
