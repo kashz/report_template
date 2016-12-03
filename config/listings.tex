@@ -4,6 +4,7 @@
 % Grey Version
 % require xcolor.sty
 \definecolor{BgColor}{named}{white}
+\definecolor{CodeBodyColor}{RGB}{30, 30, 30}
 \definecolor{CommentColor}{RGB}{165, 165, 165}
 \definecolor{IdentifierColor}{RGB}{30, 30, 30}
 \definecolor{KeywordColor}{RGB}{60, 60, 60}
@@ -20,14 +21,14 @@
     breaklines=true, %
     captionpos=t, %
     % Styles
-    backgroundcolor=\color{BgColor}, %    
-    basicstyle={\small\ttfamily}, %    
+    backgroundcolor=\color{BgColor}, %
+    basicstyle={\small\ttfamily\color{CodeBodyColor}}, %
     commentstyle={\small\ttfamily\itshape \color{CommentColor}}, %
-    identifierstyle={\small\ttfamily \color{IdentifierColor}}, %
+    identifierstyle={\small\ttfamily\bfseries \color{IdentifierColor}}, %
     keywordstyle={\small\bfseries \color{KeywordColor}}, %
     stringstyle={\ttfamily \color{StringColor}}, %
     numberstyle={\scriptsize}, %
-    ndkeywordstyle={\small}, %    
+    ndkeywordstyle={\small}, %
     % Number
     numbers=left, %
     stepnumber=1, %
