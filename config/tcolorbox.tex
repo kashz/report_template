@@ -2,3 +2,32 @@
 
 \tcbuselibrary{breakable}
 \tcbuselibrary{skins}
+\tcbuselibrary{xparse}
+
+% reidai box
+\definecolor{ExBgColor}{RGB}{250, 250, 250}
+\definecolor{ExTitleBgColor}{RGB}{50, 50, 50}
+\definecolor{ExFrameColor}{named}{ExTitleBgColor}
+
+\newtcolorbox{exercise}[1]{ %
+    sharp corners, %
+    before skip=20pt, %
+    fonttitle=\bfseries, %
+    colback=ExBgColor, %
+    colbacktitle=ExTitleBgColor, %
+    colframe=ExFrameColor, %
+    title=#1
+}
+
+\definecolor{ResultBgColor}{named}{white}
+\definecolor{ResultTitleBgColor}{RGB}{50, 50, 50}
+\definecolor{ResultFrameColor}{named}{ResultTitleBgColor}
+\newtcolorbox{resultbox}[1]{ %
+  enhanced jigsaw, %
+  breakable,
+  before skip=25pt, %
+  colback=ResultBgColor, %
+  colbacktitle=ResultTitleBgColor, %
+  colframe=ResultFrameColor, %
+  title=#1
+}
